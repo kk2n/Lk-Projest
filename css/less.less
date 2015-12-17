@@ -35,6 +35,7 @@
 .bgc(@x:@f){background-color:@x}.bgi(@x:'space.css'){background-image: url(@x)}.bgp(@x:@c){ background-position:@x}.bgp-(@x:@c,@y:@c){background-position:@x@y}.bgr(@x:@nr){ background-repeat:@x}
 .bg(@x:@f url('') 0 0@nr){background:@x}.bg-(@x:@f,@y:'space.css',@z:@c,@v:@nr){background:@x url(@y)@z@v}
 .bgs(@x:100%){ -webkit-background-size:@x; background-size:@x;}.bgs-(@x:auto,@y:auto){-webkit-background-size:@x@y;background-size:@x@y}
+.bgz(@x:'img/.png',@y:100%){background: url(@x)@c@nr;.bgs(@y);}
 //边框
 .bd(@x:@bds@e1){ border:@x}.bd-(@x:1px,@y:solid,@z:@e1){border:@x@y@z}.bdx(@x:1px@e1){border:@x dotted}.bdx-(@x:1px,@y:@e1){border:@x@y dotted}
 .bdt(@x:@bds@e1){border-top:@x}.bdr(@x:@bds@e1){ border-right:@x}.bdb(@x:@bds@e1){ border-bottom:@x}.bdl(@x:@bds@e1){ border-left:@x}
@@ -62,7 +63,8 @@
 .fs(@x:normal){ font-style:@x}
 .td(@x:none){ text-decoration:@x}
 .ta(@x:center){ text-align:@x}
-.tal(@x:left){ text-align:@x}
+.tal(@x:@l){ text-align:@x}
+.tar(@x:@r){ text-align:@x}
 .ti(@x:12px){text-indent:@x}
 .fw(@x:normal){ font-weight:@x}
 .lh(@x:@fz*2){ line-height:@x}
